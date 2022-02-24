@@ -1,7 +1,5 @@
 import {
-  AmbientLight,
   DirectionalLight,
-  HemisphereLight,
   DirectionalLightHelper,
 } from "three";
 

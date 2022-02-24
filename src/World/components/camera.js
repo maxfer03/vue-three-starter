@@ -1,4 +1,4 @@
-import { PerspectiveCamera, MathUtils } from 'three';
+import { PerspectiveCamera } from 'three';
 
 function createCamera() {
   const camera = new PerspectiveCamera(
