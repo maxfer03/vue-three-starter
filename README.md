@@ -1,6 +1,4 @@
-# vue-three
-
-# Three.js + Vite + Scss boilerplate
+# Vue + Three.js + Scss Starter
 A Three.js + Vue Starter I developed to save some time with all the hassles of setting up three.js.
 
 For documentation, check out [Discover Three.js' modular design principle](https://discoverthreejs.com/book/first-steps/world-app/)
