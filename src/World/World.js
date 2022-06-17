@@ -18,9 +18,8 @@ class World {
   constructor(container) {
     // Instances of camera, scene, and renderer
     camera = createCamera();
-    scene = createScene('hsl(210, 29%, 35%)');
+    scene = createScene("hsl(210, 29%, 35%)");
     renderer = createRenderer();
-
 
     // Initializate Loop
     loop = new Loop(camera, scene, renderer);
@@ -29,19 +28,21 @@ class World {
 
     // Orbit Controls
     const controls = createControls(camera, renderer.domElement);
-  
+
+
+    console.log(controls.listenToKeyEvents);
+
     // Cube Instance
-    let box = createCube('#41b883')
+    let box = createCube("#41b883");
 
     // Light Instance, with optional light helper
-    const { light, lightHelper } = createLights('white');
+    const { light, lightHelper } = createLights("white");
 
     loop.updatables.push(controls);
     loop.updatables.push(box);
     loop.updatables.push(light);
 
-
-    scene.add(light, box );
+    scene.add(light, box);
 
     // Responsive handler
     const resizer = new Resizer(container, camera, renderer);

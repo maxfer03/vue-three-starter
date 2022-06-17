@@ -13,10 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color:hsl(210, 29%, 20%);;
+  pointer-events: none;
 }
 
 #nav {
   padding: 30px;
+  @include child-events-on();
 
   a {
     font-weight: bold;
